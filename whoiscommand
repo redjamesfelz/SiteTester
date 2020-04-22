@@ -1,4 +1,4 @@
 <?php
-$output = shell_exec('whois google.com');
+$output = shell_exec('whois' . $url);
 echo "<pre>$output</pre>";
 ?>
