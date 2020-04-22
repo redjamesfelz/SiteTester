@@ -1,0 +1,4 @@
+<?php
+$output = shell_exec('whois google.com');
+echo "<pre>$output</pre>";
+?>
