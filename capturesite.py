@@ -1,14 +1,11 @@
-import requests
-import webbrowser
-import time
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
-from time import sleep
+#Install python imgkit
+#sudo apt-get install imgkit
 
-driver = webdriver.Chrome(executable_path='/home/executables/Desktop/chromedriver')
-driver.get('https://google.com')
-sleep(1)
+#https://stackoverflow.com/questions/12197815/how-can-i-pass-variable-from-php-to-python
+#import sys
+#domain = sys.argv[1]
 
-driver.get_screenshot_as_file("screenshot.png")
-driver.quit()
-print("end...")
+import imgkit
+
+imgkit.from_url('https://planetred.world', 'output.jpg')
+#imgkit.from_url(domain, 'output.jpg')
