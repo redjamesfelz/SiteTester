@@ -67,6 +67,10 @@ $command = escapeshellcmd('python2.7 /home/planetred1/public_html/site-tester/si
 $output = shell_exec($command);
 echo $output;
 ?>
+  
+<h2>HTML Image</h2>
+<img src="output.jpg" alt="Trulli" width="500" height="333">
+
 
 <h1 style="color:#000080;" ><font size="100" face="verdana"><br> SUBLIST3R </font></h1>
 <!–– python to do sublister -->
